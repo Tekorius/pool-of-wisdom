@@ -8,6 +8,7 @@ when you no longer have the energy to swim.
 * [React Native](react-native/index.md)
 * [Servers](servers/index.md)
 * [Ubuntu Desktop (and maybe other distros)](linux/index.md)
+* [LAMPP](lampp/index.md)
 * [Useful Reading](reads.md)
 
 ## But really, what is this repo?
