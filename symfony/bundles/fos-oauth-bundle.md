@@ -170,6 +170,13 @@
 Add this to your `security.yaml` file
 
     security:
+        encoders:
+            App\Entity\User:
+                algorithm: bcrypt
+                cost: 13
+        providers:
+            database:
+                id: App\Security\User\UserProvider
         firewalls:
             oauth_token:
                 pattern: ^/oauth/v2/token
