@@ -11,6 +11,7 @@ I will post my cheatsheets, so I don't have to remember anything.
 
 ## Sheets
 
+* [Configuring a new PHP machine](php.md)
 * [CSF](csf.md)
 * [supervisor.d](supervisord.md)
 

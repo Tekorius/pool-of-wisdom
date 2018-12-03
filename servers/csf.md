@@ -7,7 +7,39 @@ This is something that should keep away the Chinese bots
 
 ### Installation
 
-I forgot how to do that at the moment of writing... Pull request anyone?
+[Original Source](https://download.configserver.com/csf/install.txt)
+
+    cd /usr/src
+    wget https://download.configserver.com/csf.tgz
+    tar -xzf csf.tgz
+    cd csf
+    sh install.sh
+
+Test if everything works on the server
+
+    perl /usr/local/csf/bin/csftest.pl
+
+If you previously had any other iptables firewall, you need to remove
+it. You can use this script. Run just in case
+
+    sh /usr/local/csf/bin/remove_apf_bfd.sh
+
+Now don't forget to whitelist your IPs
+
+Disable testing in `/etc/csf/csf.conf` and most importantly
+remove `22` port from config. This will stop SSH connections
+from IPs not defined in csf.allow file.
+
+    cd /etc/csf
+    nano csf.conf
+
+Start csf firewall
+
+    csf -s
+
+Now restart server or lfd service
+
+    service lfd restart
 
 ### Whitelisting an IP
 
