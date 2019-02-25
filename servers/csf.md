@@ -40,6 +40,8 @@ Start csf firewall
 Now restart server or lfd service
 
     service lfd restart
+    
+**Don't forget to disable testing mode after whitelisting the correct IPs!**
 
 ### Whitelisting an IP
 
